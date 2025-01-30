@@ -9,6 +9,6 @@ import com.gcu.entities.OrderEntity;
 
 public interface OrdersRepository extends CrudRepository<OrderEntity, Long>{
 	@Override
-	@Query(value = "SELECT * FROM ORDERS")
+	@Query(value = "SELECT * FROM orders")
 	public List<OrderEntity> findAll();
 }
