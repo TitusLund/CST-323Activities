@@ -1,6 +1,9 @@
 package com.gcu.controller;
 
 import java.util.ArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.Collections;
 import java.util.List;
 
@@ -23,6 +26,9 @@ import jakarta.validation.Valid;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	
 	
 	@Autowired
 	private OrdersBusinessInterface service;
