@@ -37,7 +37,7 @@ public class LoginController {
 	
 	@GetMapping("/")
 	public String display(Model model) {
-		model.addAttribute("title", "Login Form");
+		model.addAttribute("title", "Login Form that demonstrates that heroku auto deploy works");
 		model.addAttribute("loginModel", new LoginModel());
 		return "login";
 	}
